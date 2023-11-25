@@ -110,11 +110,14 @@
             `${URL}/api/instagram/getposts?accountId=${accountId}&numberPosts=${numberPosts}&endCursor=${endCursor}`,
         );*/
         if (mode != "mock") {
-            const response = await (
-                await fetch(
-                    `${URL}/api/instagram/getposts?accountId=${accountId}&numberPosts=${numberPosts}&endCursor=${endCursor}`,
-                )
-            ).json();
+            let fullUrl;
+            if (mode == "dev") {
+                fullUrl = `${URL}/api/instagram/getposts?accountId=${accountId}&numberPosts=${numberPosts}&endCursor=${endCursor}`;
+            } else {
+                fullUrl = `/api/instagram/getposts?accountId=${accountId}&numberPosts=${numberPosts}&endCursor=${endCursor}`;
+            }
+
+            const response = await (await fetch(fullUrl)).json();
 
             //      console.log(response);
 
