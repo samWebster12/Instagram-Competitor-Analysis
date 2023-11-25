@@ -40,8 +40,8 @@
 
         userNotFound = false;
         notloading = false;
-        console.log(mode);
-        console.log(URL);
+        // console.log(mode);
+        // console.log(URL);
         //DO THE SEARCH (Make a Call to the backend...)
         if (mode != "mock") {
             let fullUrl;
@@ -105,7 +105,7 @@
 
     async function handleMore() {
         handlingMore = true;
-        const numberPosts = 40;
+        const numberPosts = 12;
         /*   console.log(
             `${URL}/api/instagram/getposts?accountId=${accountId}&numberPosts=${numberPosts}&endCursor=${endCursor}`,
         );*/
