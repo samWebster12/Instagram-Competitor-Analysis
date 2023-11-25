@@ -23,7 +23,7 @@ app.use(
     }),
 );
 
-app.use(express.static(resolve("./public")));
+app.use(express.static(resolve("./dist")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
