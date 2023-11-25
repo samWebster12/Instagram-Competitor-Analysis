@@ -21,7 +21,7 @@
 
     import dummyPosts from "./lib/utils/dummyposts.js";
 
-    const URL = "http://192.168.1.25:3005";
+    const URL = import.meta.env.VITE_URL;
     let notloading = true;
     let viewPosts = false;
     let handlingMore = false;
@@ -40,14 +40,18 @@
 
         userNotFound = false;
         notloading = false;
-
+        console.log(mode);
+        console.log(URL);
         //DO THE SEARCH (Make a Call to the backend...)
         if (mode != "mock") {
-            const response = await (
-                await fetch(
-                    `${URL}/api/instagram/getaccountinfo?username=${username.detail.inputValue}`,
-                )
-            ).json();
+            let fullUrl;
+            if (mode == "dev") {
+                fullUrl = `${URL}/api/instagram/getaccountinfo?username=${username.detail.inputValue}`;
+            } else {
+                fullUrl = `/api/instagram/getaccountinfo?username=${username.detail.inputValue}`;
+            }
+
+            const response = await (await fetch(fullUrl)).json();
 
             //    console.log(response);
 
