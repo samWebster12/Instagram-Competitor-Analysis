@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/api/instagram/getaccountinfo", async (req, res) => {
-    // console.log("USERNAME: ", req.query.username);
+    console.log("USERNAME: ", req.query.username);
     res.json({ data: await getAccount(req.query.username) });
 });
 

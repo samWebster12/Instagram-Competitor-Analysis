@@ -21,7 +21,7 @@
 
     import dummyPosts from "./lib/utils/dummyposts.js";
 
-    const URL = "http://128.61.12.88:3005";
+    const URL = "http://192.168.1.25:3005";
     let notloading = true;
     let viewPosts = false;
     let handlingMore = false;

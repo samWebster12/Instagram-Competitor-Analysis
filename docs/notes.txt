@@ -1,0 +1,7 @@
+Ideas: 
+- Implement a way to "star" some of the cards so that you can evaluate and sort just a subset of the posts
+- Sales AI to sell to people on Instagram
+
+
+Fix:
+- When handleMore adds posts to the total posts, make sure the newest are at the top.
