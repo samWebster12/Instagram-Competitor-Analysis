@@ -3,7 +3,7 @@
 ## Features
 
 -   Allows for users to lookup any public Instagram username and return set number of posts
--   You can then sort by posts by most likes, views, and other important metrics
+-   You can then sort the posts by most likes, views, comments, or newest
 
 ## Purpose
 
