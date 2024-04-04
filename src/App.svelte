@@ -269,7 +269,7 @@
 
         <div class="flex justify-center">
             {#if notloading}
-                <div class="w-1/2">
+                <div class="w-3/4 md:w-2/3 lg:w-1/2">
                     <SearchBar on:search={handleSearch}></SearchBar>
                 </div>
             {/if}
