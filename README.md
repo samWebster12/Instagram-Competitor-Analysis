@@ -18,7 +18,7 @@ Enter a username, fetch the latest posts, and sort them by likes, views, comment
 
 | Layer | Libraries |
 | --- | --- |
-| **Frontend** | Svelte 4, Vite, Tailwind CSS, Flowbite |
+| **Frontend** | Svelte 4, Vite, Tailwind CSS |
 | **Backend** | Node.js, Svelte, ExpressJS |
 | **Utilities** | dotenv, mathjs, SocialBlade API, Scraping Bee API |
 
